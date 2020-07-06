@@ -1,0 +1,76 @@
+
+
+<!-- في هذه المهمة ستقوم بإنشاء حاسبة درجات -->
+
+<!-- تستقبل الآلة الحاسبة درجاتك في من خلال حقول إدخال -->
+<!-- 
+    quizes      /10
+    midterm     /25
+    final test  /50
+    oral        /15 
+-->
+
+<!-- تقوم الآلة الحاسبة بإجراء الحسابات اللازمة لحساب مجموع درجاتك بحيث -->
+<!-- 
+    90 - 100                 A
+    أكبر من أو يساوي 80      B
+    أكبر من أو يساوي 70      C
+    أكبر من أو يساوي 60      D
+    عدا ذلك                  F 
+-->
+
+<!-- ثم يظهر مجموعك النهائي على الصفحة
+     A, B, C, D or F مع درجتك بالحروف -->
+
+     
+<!-- 🔥بونص المهمة الثالثة -->
+<!-- قم بجعل المستخدم يدخل درجاته دفعة 
+     وكتابة فاصلة بين كل درجة ودرجة 
+     task3 فتصبح بحاجة إلى استخدام حقل إدخال واحد فقط كما في الصورة -->
+
+<!-- A, B, C, D or F مميز في الصفحة لكل درجة GIF قم بإدراج -->
+
+<!-- HTML and CSS قم بإنشاء التصميم الخاص بك للموقع من خلال لغتي -->
+
+<!-- --------------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Body{
+    background-color: silver;
+    border: silver;
+}
+
+.container-box{
+    border: 30px darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    
+}
+    </style>
+</head>
+<body class="Body">
+<div class="container-box">
+    <h1> Grade Calculator</h1>
+
+    <h5>Enter Your Grade Seprarated By Commas:</h5>
+
+  <form method="POST" >
+
+     <input type="text" type="number"/>
+
+     <input type="submit" value="calulate"/>
+    
+  </form>
+  <h3 class="resulBYnumber"> Your numeric grade is : </h3>
+  <h3 id="resulte_letter"> Your letter grade is: </h3>
+</div>
+    <script src="./grade.js"></script>
+</body>
+</html>
